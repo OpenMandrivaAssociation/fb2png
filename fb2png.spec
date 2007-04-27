@@ -1,6 +1,6 @@
 %define name fb2png
 %define version 0.1
-%define release 5mdk
+%define release %mkrel 6
 
 Summary: Take screenshots from the framebuffer
 Name: %{name}
@@ -20,7 +20,7 @@ Patch: fb2png-0.1-libpng-needs-libm.patch
 Utility to make screenshots from framebuffer
 
 %prep
-%setup
+%setup -q
 %patch0 -p1
 cp %{SOURCE1} index.html
 
