@@ -13,7 +13,6 @@ Url: http://www.minlinux.org/projects/fb2png/
 Group: System/Kernel and hardware
 BuildRequires:	gcc
 BuildRequires:	libpng-devel
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Patch: fb2png-0.1-libpng-needs-libm.patch
 
 %description
