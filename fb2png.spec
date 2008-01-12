@@ -1,6 +1,6 @@
 %define name fb2png
 %define version 0.1
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary: Take screenshots from the framebuffer
 Name: %{name}
