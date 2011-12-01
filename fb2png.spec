@@ -28,12 +28,12 @@ cp %{SOURCE1} index.html
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-%makeinstall BINDIR=$RPM_BUILD_ROOT%{_bindir}
+rm -rf %{buildroot}
+install -d %{buildroot}%{_bindir}
+%makeinstall BINDIR=%{buildroot}%{_bindir}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
