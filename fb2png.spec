@@ -15,6 +15,7 @@ BuildRequires:	gcc
 BuildRequires:	libpng-devel
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Patch0: fb2png-0.1-libpng-needs-libm.patch
+Patch1: fb2png-0.1-zlib-include.patch
 
 %description
 Utility to make screenshots from framebuffer
@@ -22,6 +23,7 @@ Utility to make screenshots from framebuffer
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p0
 cp %{SOURCE1} index.html
 
 %build
