@@ -1,0 +1,11 @@
+--- fb2png-0.1/Makefile.pix	2001-09-19 18:05:45.000000000 +0200
++++ fb2png-0.1/Makefile	2003-04-21 16:03:15.000000000 +0200
+@@ -4,7 +4,7 @@
+ all: fb2png
+ 
+ fb2png: fb2png.c
+-	gcc -Wall -s fb2png.c -lpng -lz -o fb2png
++	gcc -Wall -s fb2png.c -lm -lpng -lz -o fb2png
+ 
+ install:
+ 	install fb2png ${BINDIR}
