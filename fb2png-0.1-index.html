@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Framebuffer to png</title>
+	</head>
+	<body>
+		<center><h1>Framebuffer to png</h1></center>
+		<b>What is fb2png:</b><br>
+		A util to take screenshots from the framebuffer.<br>
+		<br>
+		<b>Usage:</b><br>
+		fb2png /dev/fb0 outfile.png<br>
+		or<br>
+		cat /dev/fb0 &gt infile.raw<br>
+		fb2png infile.raw outfile.png 0 800 600 16<br>
+		<br>
+		<b>Download:</b><br>
+		<a href="src/">fb2png version 0.1</a><br>
+		<br>
+		<b>Install:</b><br>
+		make<br>
+		make install<br>
+		<br>
+		<b>TODO</b><br>
+		write README<br>
+		make rpm<br>
+		add support for input of 8, 15, 32 bit.<br>
+		add support for output other then 24bit.<br>
+		write dietlibc compile howto.<br>
+		write redhat/mandrake/etc.. install screenshot howto.<br>
+	</body>
+</html>	

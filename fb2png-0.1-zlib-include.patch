@@ -1,5 +1,6 @@
---- fb2png.c.zlib	2011-09-15 02:56:43.000000000 +0200
-+++ fb2png.c	2011-09-15 02:56:53.000000000 +0200
+diff -urN fb2png-0.1/fb2png.c fb2png-0.1-patched/fb2png.c
+--- fb2png-0.1/fb2png.c	2001-09-20 03:10:14.000000000 +1100
++++ fb2png-0.1-patched/fb2png.c	2012-08-26 03:01:12.413259293 +1100
 @@ -2,6 +2,7 @@
  #include <stdlib.h>
  #include <unistd.h>
