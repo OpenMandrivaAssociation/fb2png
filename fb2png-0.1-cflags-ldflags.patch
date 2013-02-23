@@ -1,0 +1,11 @@
+--- fb2png-0.1/Makefile~	2013-02-23 05:46:49.583346400 +0100
++++ fb2png-0.1/Makefile	2013-02-23 05:48:48.625079289 +0100
+@@ -4,7 +4,7 @@ BINDIR=${PREFIX}/bin
+ all: fb2png
+ 
+ fb2png: fb2png.c
+-	gcc -Wall -s fb2png.c -lm -lpng -lz -o fb2png
++	gcc -Wall $(CFLAGS) fb2png.c $(LDFLAGS) -lm -lpng -lz -o fb2png
+ 
+ install:
+ 	install fb2png ${BINDIR}

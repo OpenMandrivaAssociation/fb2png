@@ -1,7 +1,7 @@
 Summary:	Take screenshots from the framebuffer
 Name:		fb2png
 Version:	0.1
-Release:	16
+Release:	17
 Group:		System/Kernel and hardware
 License:	GPL
 Url:		http://www.minlinux.org/projects/fb2png/
@@ -9,6 +9,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Source1:	fb2png-0.1-index.html
 Patch0:		fb2png-0.1-libpng-needs-libm.patch
 Patch1:		fb2png-0.1-zlib-include.patch
+Patch2:		fb2png-0.1-cflags-ldflags.patch
 BuildRequires:	gcc
 BuildRequires:	pkgconfig(libpng)
 
@@ -19,10 +20,11 @@ Utility to make screenshots from framebuffer
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 cp %{SOURCE1} index.html
 
 %build
-%make
+%make CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
 install -d %{buildroot}%{_bindir}
