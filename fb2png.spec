@@ -1,7 +1,7 @@
 Summary:	Take screenshots from the framebuffer
 Name:		fb2png
 Version:	0.1
-Release:	17
+Release:	18
 Group:		System/Kernel and hardware
 License:	GPLv2
 Url:		http://www.minlinux.org/projects/fb2png/
