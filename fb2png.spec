@@ -18,7 +18,7 @@ Utility to make screenshots from framebuffer
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 cp %{SOURCE1} index.html
 
 %build
