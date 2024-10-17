@@ -4,7 +4,7 @@ Version:	0.1
 Release:	27
 Group:		System/Kernel and hardware
 License:	GPLv2
-Url:		http://www.minlinux.org/projects/fb2png/
+Url:		https://www.minlinux.org/projects/fb2png/
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	fb2png-0.1-index.html
 Patch0:		fb2png-0.1-libpng-needs-libm.patch
