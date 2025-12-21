@@ -11,6 +11,7 @@ Patch0:		fb2png-0.1-libpng-needs-libm.patch
 Patch1:		fb2png-0.1-zlib-include.patch
 Patch2:		fb2png-0.1-cflags-ldflags.patch
 
+BuildRequires:	make
 BuildRequires:	pkgconfig(libpng)
 
 %description
